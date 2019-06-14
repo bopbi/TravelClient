@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         title = getString(R.string.title_home)
-        viewpager.adapter = object : FragmentStateAdapter(this.supportFragmentManager) {
+        viewpager.adapter = object : FragmentStateAdapter(this) {
 
             override fun getItem(position: Int): Fragment {
                 return when (position) {

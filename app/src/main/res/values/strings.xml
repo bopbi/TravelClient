@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Dian Pesona Wisata</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_contact">Contact</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_featured">Promo</string>
+    <string name="title_groups">Destinasi</string>
+    <string name="title_tours">Paket Tour</string>
+</resources>

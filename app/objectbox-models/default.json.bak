@@ -1,0 +1,103 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "1:5165238504513576581",
+      "lastPropertyId": "1:3234707281813653144",
+      "name": "Featured",
+      "properties": [
+        {
+          "id": "1:3234707281813653144",
+          "name": "id"
+        }
+      ],
+      "relations": [
+        {
+          "id": "1:773480968185203225",
+          "name": "tourIds"
+        }
+      ]
+    },
+    {
+      "id": "2:3720955456936573749",
+      "lastPropertyId": "2:3459428433247215575",
+      "name": "Group",
+      "properties": [
+        {
+          "id": "1:4790005091851359666",
+          "name": "id"
+        },
+        {
+          "id": "2:3459428433247215575",
+          "name": "title"
+        }
+      ],
+      "relations": [
+        {
+          "id": "2:779079871962926792",
+          "name": "TourIds"
+        }
+      ]
+    },
+    {
+      "id": "3:4050668676925079931",
+      "lastPropertyId": "3:5526127483163687577",
+      "name": "TourId",
+      "properties": [
+        {
+          "id": "1:6505425653495513991",
+          "name": "id"
+        },
+        {
+          "id": "3:5526127483163687577",
+          "name": "tour_uuid"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "4:5745567352946466829",
+      "lastPropertyId": "6:7717120504133225716",
+      "name": "Tour",
+      "properties": [
+        {
+          "id": "1:4383514482611821000",
+          "name": "id"
+        },
+        {
+          "id": "2:8180978983228047339",
+          "name": "title"
+        },
+        {
+          "id": "3:5944550692104312818",
+          "name": "desc"
+        },
+        {
+          "id": "4:2587766466808462758",
+          "name": "image_main"
+        },
+        {
+          "id": "6:7717120504133225716",
+          "name": "uuid"
+        }
+      ],
+      "relations": []
+    }
+  ],
+  "lastEntityId": "4:5745567352946466829",
+  "lastIndexId": "0:0",
+  "lastRelationId": "2:779079871962926792",
+  "lastSequenceId": "0:0",
+  "modelVersion": 4,
+  "modelVersionParserMinimum": 4,
+  "retiredEntityUids": [],
+  "retiredIndexUids": [],
+  "retiredPropertyUids": [
+    1527848951301081413,
+    8395968102691413128
+  ],
+  "retiredRelationUids": [],
+  "version": 1
+}

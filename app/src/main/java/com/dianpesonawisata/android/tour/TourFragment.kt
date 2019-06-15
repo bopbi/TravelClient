@@ -10,6 +10,7 @@ import androidx.lifecycle.ViewModelProviders
 import com.bumptech.glide.Glide
 import com.dianpesonawisata.android.R
 import com.dianpesonawisata.android.constant.IntentConstant.Companion.TOUR_ID
+import com.dianpesonawisata.android.ui.decoration.PaletteToolbarRequestListener
 import com.dianpesonawisata.android.viewmodel.TourViewModelFactory
 import com.uber.autodispose.android.lifecycle.AndroidLifecycleScopeProvider
 import com.uber.autodispose.lifecycle.autoDisposable
@@ -56,10 +57,13 @@ class TourFragment : Fragment() {
 
     private fun render(state: TourViewState) {
         state.tour?.let { tour ->
-            activity?.title = tour.title
-            tourTitle.text = tour.title
+            toolbarLayout.title = tour.title
             tourDesc.text = tour.desc
-            Glide.with(tourImage.context).load(tour.image_main).into(tourImage)
+            Glide.with(tourImage.context)
+                .asBitmap()
+                .load(tour.image_main)
+                .addListener(PaletteToolbarRequestListener(toolbarLayout))
+                .into(tourImage)
         }
     }
 }

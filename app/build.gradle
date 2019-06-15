@@ -50,6 +50,7 @@ dependencies {
         exclude group: "com.android.support"
     }
     implementation 'androidx.fragment:fragment:1.1.0-beta01'
+    implementation 'androidx.palette:palette:1.0.0'
     implementation 'com.google.firebase:firebase-core:16.0.9'
     implementation 'com.google.firebase:firebase-database:17.0.0'
 
